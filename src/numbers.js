@@ -34,7 +34,7 @@ function quotient (a, b) { return Math.trunc (a/b) ;
   // your code hereß
 }
 
-function remainder (a, b) { return % = (a/b) ;
+function remainder (a, b) { if (a % b) ;
   // your code here
 }
 
