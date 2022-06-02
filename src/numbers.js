@@ -1,44 +1,40 @@
-function add (a, b) {
+const { TestWatcher } = require("jest");
+
+function add (a, b) { return a + b;
+  
+}
+
+function subtract (a, b) { return a - b;
+}
+
+function multiply (a, b) { return a * b;
+}
+
+function divide (a, b) { return a / b;
+}
+
+function power (a, b) { return a ** b;
+}
+
+function round (a) { return Math.round (a);
+}
+
+function roundUp (a) { return Math.ceil (a);
+  
+}
+
+function roundDown (a) { return Math.trunc (a);
   // your code here
 }
 
-function subtract (a, b) {
-  // your code here
+function absolute (a) { return Math.abs (a) ;
 }
 
-function multiply (a, b) {
-  // your code here
+function quotient (a, b) { return Math.trunc (a/b) ;
+  // your code hereß
 }
 
-function divide (a, b) {
-  // your code here
-}
-
-function power (a, b) {
-  // your code here
-}
-
-function round (a) {
-  // your code here
-}
-
-function roundUp (a) {
-  // your code here
-}
-
-function roundDown (a) {
-  // your code here
-}
-
-function absolute (a) {
-  // your code here
-}
-
-function quotient (a, b) {
-  // your code here
-}
-
-function remainder (a, b) {
+function remainder (a, b) { return % = (a/b) ;
   // your code here
 }
 
