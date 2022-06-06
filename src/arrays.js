@@ -1,10 +1,12 @@
-const getNthElement = (index, array) => {
-  // your code here
-};
+const getNthElement = (index, array) => 
+{ for (let i = 0; i < array.length ; i++)
+   return array[index];
 
-const arrayToCSVString = array => {
+}
+
+function arrayToCSVString(array) {
   // your code here
-};
+}
 
 const csvStringToArray = string => {
   // your code here
