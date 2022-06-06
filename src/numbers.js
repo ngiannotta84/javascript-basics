@@ -1,4 +1,4 @@
-const { TestWatcher } = require("jest");
+const { TestWatcher } = require ("jest") ;
 
 function add (a, b) { return a + b;
   
@@ -34,8 +34,7 @@ function quotient (a, b) { return Math.trunc (a/b) ;
   // your code hereß
 }
 
-function remainder (a, b) { if (a % b) ;
-  // your code here
+function remainder (a, b) { return (a % b) ;
 }
 
 module.exports = {

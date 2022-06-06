@@ -1,64 +1,79 @@
 function negate(a) {
-  // your code here
+  if (a === true ) { return a ===false }
+else if (a=== false) { return true }
 };
 
 function both(a, b) {
-  // your code here
+   if (a === true && b === true ) {return true}
+else { return false}
 };
 
-function either(a, b) {
-  // your code here
+function either(a, b) { 
+  if ( a===true || b=== true) { return true }
+else {return false }
 };
 
-function none(a, b) {
-  // your code here
+function none(a, b) { 
+  if ( a === false && b === false ) { return true} 
+  else {return false };
 };
 
-function one(a, b) {
-  // your code here
+function one(a, b) {  
+if (a === true && b === false ) { return true}    
+else if ( a === false && b === true) {return true}
+else {return false}
 };
 
-function truthiness(a) {
-  // your code here
+function truthiness(a) { return Boolean (a)
 };
 
-function isEqual(a, b) {
-  // your code here
+function isEqual(a, b) { 
+if (a === true && b === true) { return true }
+else if (a === b) {return true}
+else {return false}
 };
 
 function isGreaterThan(a, b) {
-  // your code here
+  if (a > b) {return true}
+  else {return false}
 };
 
 function isLessThanOrEqualTo(a, b) {
-  // your code here
+  if ( a <= b) {return true}
+  else {return false}
 };
 
-function isOdd(a) {
-  // your code here
+function isOdd(a) { 
+if (a % 2 === 1) {return true} 
+else {return false}
 };
 
 function isEven(a) {
-  // your code here
+if ( a % 2 === 0) {return true}
+else {return false}
 };
 
-function isSquare(a) {
-  // your code here
+function isSquare(a) { 
+  if (Math.sqrt (a) % 1 === 0 ) {return true}
+  else { return false }
 };
 
 function startsWith(char, string) {
-  // your code here
+  if (char === string.charAt(0)) {return true}
+  else {return false}
 };
 
-function containsVowels(string) {
-  // your code here
+function containsVowels(string) { let pattern = /[aeiou]/i;
+if (string.match(pattern)) {return true}
+else {return false}
 };
 
-function isLowerCase(string) {
-  // your code here
+function isLowerCase(string) { 
+  if (string === string.toLowerCase) {return true}
+  else {return false}
 };
 
-module.exports = {
+module.exports = { 
   negate,
   both,
   either,
@@ -75,3 +90,4 @@ module.exports = {
   containsVowels,
   isLowerCase
 };
+

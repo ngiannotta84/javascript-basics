@@ -1,26 +1,24 @@
-function sayHello (string) {
+const { TestWatcher } = require("jest");
+
+function sayHello (string) { return 'Hello, ' + string + '!';
+}
+
+function uppercase (string) { return string.toUpperCase() } ;
+
+function lowercase (string) { return string.toLowerCase() ;
+};
+
+function countCharacters (string) { return string.length ;
+// your code here
+};
+
+function firstCharacter (string) { return string.charAt(0) ;
   // your code here
 };
 
-function uppercase (string) {
-  // your code here
+function firstCharacters (string, n) { return string.substring (0,n)
 };
 
-function lowercase (string) {
-  // your code here
-};
-
-function countCharacters (string) {
-  // your code here
-};
-
-function firstCharacter (string) {
-  // your code here
-};
-
-function firstCharacters (string, n) {
-  // your code here
-};
 
 module.exports = {
   sayHello,
