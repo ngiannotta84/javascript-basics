@@ -1,48 +1,49 @@
 const getNthElement = (index, array) => 
-{ for (let i = 0; i < array.length ; i++)
-   return array[index];
+{
+return array[index];
 
 }
 
 function arrayToCSVString(array) {
-  // your code here
-}
+return array.join (",");
+};
 
 const csvStringToArray = string => {
-  // your code here
+return string.split (",");
 };
 
-const addToArray = (element, array) => {
-  // your code here
+const addToArray = (element, array) => { 
+array.push(element)
 };
 
-const addToArray2 = (element, array) => {
-  // your code here
-};
+function addToArray2(element, array) {
+
+}
 
 const removeNthElement = (index, array) => {
-  // your code here
-};
+array.splice(index,1)};
 
 const numbersToStrings = numbers => {
-  // your code here
+let taskname = numbers.map((number) =>number.toString())
+return taskname
 };
 
-const uppercaseWordsInArray = strings => {
-  // your code here
+const uppercaseWordsInArray = strings => { 
+let myarray1 = strings.map((item)=>item.toUpperCase())
+return myarray1
 };
 
 const reverseWordsInArray = strings => {
-  // your code here
 };
 
-const onlyEven = numbers => {
-  // your code here
+const onlyEven = numbers => { 
+let myarray2 = numbers.filter((number)=>number%2==0);
+return myarray2
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
-};
+let myarray3 = array.filter( item => item !== array[index])
+return myarray3;};
 
 const elementsStartingWithAVowel = strings => {
   // your code here
